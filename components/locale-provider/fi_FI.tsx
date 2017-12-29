@@ -1,6 +1,4 @@
 import * as moment from 'moment';
-moment.locale('fi');
-
 import Pagination from 'rc-pagination/lib/locale/fi_FI';
 import DatePicker from '../date-picker/locale/fi_FI';
 import TimePicker from '../time-picker/locale/fi_FI';
@@ -8,6 +6,7 @@ import Calendar from '../calendar/locale/fi_FI';
 
 export default {
   locale: 'fi',
+  setMomentLocale() { moment.locale('fi'); },
   Pagination,
   DatePicker,
   TimePicker,

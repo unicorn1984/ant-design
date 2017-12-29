@@ -1,5 +1,7 @@
-import defaultLocale from './default';
 import * as moment from 'moment';
-moment.locale('en');
+import defaultLocale from './default';
 
-export default defaultLocale;
+export default {
+  ...defaultLocale,
+  setMomentLocale() { moment.locale('en-gb'); },
+};
